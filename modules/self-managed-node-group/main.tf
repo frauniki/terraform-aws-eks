@@ -283,6 +283,7 @@ resource "aws_autoscaling_group" "this" {
   min_size                  = var.min_size
   max_size                  = var.max_size
   desired_capacity          = var.desired_size
+  desired_capacity_type     = var.desired_size_type
   capacity_rebalance        = var.capacity_rebalance
   min_elb_capacity          = var.min_elb_capacity
   wait_for_elb_capacity     = var.wait_for_elb_capacity
